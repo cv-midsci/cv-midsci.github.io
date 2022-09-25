@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w2.org/1999/xhtml">
+<html lang="en">
+    <head>
+	<meta name="generator" content="Hugo 0.103.1" />
+            <meta charset="utf-8" />
+    <title>terminalCV </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="midsci cv terminal format">
+    <meta property="og:title" content="terminalCV" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://cv-midsci.github.io/" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href=""/>
+    <link rel="canonical" href="https://cv-midsci.github.io/" />    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.33.2/js/jquery.terminal.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/autocomplete_menu.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.33.2/css/jquery.terminal.min.css" rel="stylesheet"/>
+
+    <style>
+        body {
+            width: 100%;
+            font-size: 18px;
+        }
+    </style>
+    
+    </head>
+        <body>
+        
+<script> 
+jQuery(document).ready(function($) {
+    var animation = false;
+    var availableCommands = ["all", "whois", 'social', 'education',
+                    'skills', 'softskills', 'languages', 
+                    
+                     'exit', 
+                    "ascii",
+                    
+                    ] 
+
+    $('body').terminal(function(command, term) {
+
+     
+    function whois () {
+        term.echo ("");
+         
+            term.echo ("[[b;grey;]Name:]\t\t\tMidSci");
+            term.echo ("[[b;grey;]Profession:]\t\tUnknown");
+            term.echo ("[[b;grey;]Location:]\t\tTokyo, Japan");
+            
+                term.echo ("[[b;grey;]Email:]\t\t\tyamotowakarahi[at]gmail.com");
+            
+            
+                term.echo ("[[b;grey;]Homepage:]\t\thttps:\/\/midsci.github.io\/");
+            
+            
+                term.echo ("")
+                term.echo ("I am a datascientist in ad agency.\nMy intereset\n  \u003e machine learning\n  \u003e deep learinig\n  \u003e generative model\n  \u003e generative art\n  \u003e data visualization\n")
+            
+        
+        term.echo ("");
+      }
+
+    function social () {
+        term.echo("");
+        
+            
+                
+                    term.echo("github:" + "          https:\/\/github.com\/midsci");
+                
+                    term.echo("instagram:" + "       https:\/\/instagram.com\/fuckin_difficult");
+                
+            
+        
+        term.echo("")
+    }
+
+    function work () {
+        term.echo("");
+        
+    }
+
+    function education () {
+        term.echo("");
+        
+            
+                term.echo("[[b;green;]Bachelor of Engineering]");
+                term.echo("April 2013 - March 2020");
+                
+                    term.echo("my thesis theme is signal processing with convex optimization.");
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;green;]M.S. in UT]");
+                term.echo("April 2020 - March 2022");
+                
+                    term.echo("my thesis theme is material design with bayesian machine learning.");
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
+        
+    }
+
+    function skills () {
+        term.echo(" ");
+        
+            
+                var bar_length = Math.round( 90  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;grey;]C\u002b\u002b:]\n" +
+                        bar_filled + bar_blank + 
+                         90  +"%");
+                
+                    term.echo("use for Monte Carlo simulations, atcoder, and convex optimization (like ADMM, ISTA, ...)");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 80  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;grey;]Python:]\n" +
+                        bar_filled + bar_blank + 
+                         80  +"%");
+                
+                    term.echo("mainly use for machine laerning");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 30  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;grey;]Go lang:]\n" +
+                        bar_filled + bar_blank + 
+                         30  +"%");
+                
+                    term.echo("This site is created by Go lang.");
+                
+                term.echo ("")
+            
+        
+    }
+    function softskills () {
+        term.echo("");
+        
+            
+                var bar_length = Math.round( 100  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;grey;]MS Office Basics:]\n" +
+                       bar_filled + bar_blank +
+                        100  +"%");
+                
+                    term.echo("use on my works");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 80  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;grey;]Linux OS Basics:]\n" +
+                       bar_filled + bar_blank +
+                        80  +"%");
+                
+                    term.echo("Manjaro \/ Ubuntu \/ Arch \/ Lubuntu ...");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 10  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;grey;]Blender Basics:]\n" +
+                       bar_filled + bar_blank +
+                        10  +"%");
+                
+                    term.echo("under learinig...");
+                
+                term.echo ("")
+            
+        
+    }
+      
+    function languages () {
+        term.echo("");
+        
+            
+                var bar_length = Math.round( 100  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;grey;]Japanese:]\n" +
+                        "" + bar_filled + bar_blank + 
+                        " " +  100  +"%");
+                
+                term.echo("")
+            
+                var bar_length = Math.round( 70  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;grey;]English:]\n" +
+                        "" + bar_filled + bar_blank + 
+                        " " +  70  +"%");
+                
+                    term.echo("my TOEIC score is 900");
+                
+                term.echo("")
+            
+        
+    }
+
+    
+    function projects () {
+        term.echo("");
+        
+    }
+
+    function misc (){
+        term.echo ("")
+        term.echo("[[b;teal;]My Ascii]" + "\n")
+        term.echo ("[[;orange;].----------------.  .----------------.  .----------------. \n| .--------------. || .--------------. || .--------------. |\n| | ____    ____ | || |     _____    | || |  ________    | |\n| ||_   \\  \/   _|| || |    |_   _|   | || | |_   ___ `.  | |\n| |  |   \\\/   |  | || |      | |     | || |   | |   `. \\ | |\n| |  | |\\  \/| |  | || |      | |     | || |   | |    | | | |\n| | _| |_\\\/_| |_ | || |     _| |_    | || |  _| |___.\u0027 \/ | |\n| ||_____||_____|| || |    |_____|   | || | |________.\u0027  | |\n| |              | || |              | || |              | |\n| \u0027--------------\u0027 || \u0027--------------\u0027 || \u0027--------------\u0027 |\n\u0027----------------\u0027  \u0027----------------\u0027  \u0027----------------\u0027 \n.----------------.  .----------------.  .----------------. \n| .--------------. || .--------------. || .--------------. |\n| |    _______   | || |     ______   | || |     _____    | |\n| |   \/  ___  |  | || |   .\u0027 ___  |  | || |    |_   _|   | |\n| |  |  (__ \\_|  | || |  \/ .\u0027   \\_|  | || |      | |     | |\n| |   \u0027.___`-.   | || |  | |         | || |      | |     | |\n| |  |`\\____) |  | || |  \\ `.___.\u0027\\  | || |     _| |_    | |\n| |  |_______.\u0027  | || |   `._____.\u0027  | || |    |_____|   | |\n| |              | || |              | || |              | |\n| \u0027--------------\u0027 || \u0027--------------\u0027 || \u0027--------------\u0027 |\n\u0027----------------\u0027  \u0027----------------\u0027  \u0027----------------\u0027 \n]")
+        term.echo ("")
+    }
+
+    function help () {
+        term.echo("\n[[b;white;]Available commands:]\n" +
+                  "\n" + availableCommands.join(' ')+ '\n') 
+    }
+
+      function source() {
+          term.echo("        _______            \n"+
+                    "       |       |           \n"+
+                    "       |       |           \n"+
+                    "       |_______|_______    \n"+
+	                "               |       |   \n"+
+                    "               |       |   \n"+
+                    " ______________|_______|   \n"+
+                    "|      |       |       |   \n"+
+                    "|      |       |       |   \n"+
+                    "|______|_______|_______|   \n"+
+                    "[[;red;]May the source be with you]\n"+
+                    "[[;grey;]https://github.com/4s3ti/terminalcv\n");
+      }
+
+    
+    function progress(percent, width) {
+        var size = Math.round(width*percent/100);
+        var left = '', taken = '', i;
+        for (i=size; i--;) {
+            taken += '=';
+        }
+        if (taken.length > 0) {
+            taken = taken.replace(/=$/, '>');
+        }
+        for (i=width-size; i--;) {
+            left += ' ';
+        }
+        return '[' + taken + left + '] ' + percent + '%';
+    }
+
+    function loading () {
+        var i = 0, size = 30;
+        prompt = term.get_prompt();
+        string = progress(0, size);
+        term.set_prompt(progress);
+        animation = true;
+        (function loop() {
+            string = progress(i++, size);
+            term.set_prompt(string);
+            if (i < 100) {
+                timer = setTimeout(loop, 10);
+            } else {
+                term.echo(progress(i, size) + ' [[b;green;]OK]').set_prompt(prompt);
+                animation = false
+            }
+        })();
+    }
+
+       
+        commands = command.split(/[ ]+/);
+        switch(commands[0]) {
+            case 'whois':
+                whois();
+                break;
+            case 'social':
+                social();
+                break;
+            case 'work':
+                work();
+                break;
+            case 'education':
+                education();
+                break;
+            case 'skills':
+                skills();
+                break;
+            case 'softskills':
+                softskills();
+                break;
+            case 'languages':
+                languages();
+                break;
+            case 'projects':
+                projects();
+                break;
+            case 'ascii':
+                misc();
+                break;
+            case 'help':
+                help();
+                break;
+            case 'all':
+                whois();
+                social();
+                work();
+                education();
+                skills();
+                softskills();
+                languages();
+                projects();
+                
+                    misc();
+                
+                
+                break;
+            
+            case ':(){:|:&};:':
+            case 'source':
+                source();
+                break;
+            
+            case 'exit':
+                term.echo("terminating ... ")
+                loading();
+                setTimeout(function(){window.location = 'https:\/\/midsci.github.io\/'}, 2000);
+                break;
+            
+            default:
+                term.echo("\nunknown command: " + command + "\n" +
+                          "please type 'help' for a list of available commands\n");
+        }
+    }, {
+        prompt: '[[;grey;]newuser@cv-midsci][[;grey;]:~$]' + " ",
+        greetings: "[[b;white;]Welcome to midsci online resume ... !\n\n\nType \u0027help\u0027 for a list of available commands\nType \u0027exit\u0027 for visit to my blog\n]",
+        keydown: function(e, term) {
+            if (animation) {
+                if (e.which == 68 && e.ctrlKey) { 
+                    clearTimeout(timer);
+                    animation = false;
+                    term.echo(string + ' [[b;red;]FAIL]')
+                    .set_prompt(prompt);
+                }
+                return false;
+            }
+        },
+        autocompleteMenu: true,
+        completion: availableCommands
+        
+    });
+});
+</script>
+
+        </body>
+</html>

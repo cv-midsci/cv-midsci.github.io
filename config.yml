@@ -1,0 +1,163 @@
+## Example Config file
+BaseURL: "https://cv-midsci.github.io/"
+theme: "terminalcv"
+title: "terminalCV"
+
+publishDir: docs
+
+params:
+  description: "midsci cv terminal format"
+  prompt: "newuser@cv-midsci"
+# promptColor: grey
+# promptSimbols: ":~$"
+# promptSimbolsColor: grey
+# startxLocation: https://midsci.github.io/
+# hideSocialName: true
+  exitLocation: https://midsci.github.io/
+  hidesource: true
+  greeting: |
+    Welcome to midsci online resume ... !
+
+
+    Type 'help' for a list of available commands
+    Type 'exit' for visit to my blog
+
+
+  whois:
+      name: "MidSci"
+      profession: "Unknown"
+      location: "Tokyo, Japan"
+      email: "yamotowakarahi[at]gmail.com"
+      homelink: "https://midsci.github.io/"
+      description: |
+              I am a datascientist in ad agency.
+              My intereset
+                > machine learning
+                > deep learinig
+                > generative model
+                > generative art
+                > data visualization
+
+  social:
+    ## IF you want to keep them aligned just add spaces
+    - name: "github"
+      url: "          https://github.com/midsci"
+    - name: "instagram"
+      url: "       https://instagram.com/fuckin_difficult"
+
+#  workexp:
+#    - jobTitle: Job With Red Title
+#      color: red
+#      company: '-' 
+#      location: somewhere
+#      date: August 2010 - Present
+#      description: Some description about this red title job
+#
+#    - jobTitle: Job with purple title
+#      color: purple
+#      company: '-'
+#      location: somewhere elese
+#      date: July 2000  - July 2010
+#      description: Some description about this purple job
+#
+#    - jobTitle: Job with default color title
+#      company: '-'
+#      location: anywhere
+#      date: July 2008 - 2010
+#      description: Description about this default color job
+
+  education:
+   - courseName: Bachelor of Engineering
+     color: green
+     date: April 2013 - March 2020
+     description: my thesis theme is signal processing with convex optimization.
+
+   - courseName: M.S. in UT
+     color: green
+     date: April 2020 - March 2022
+     description: my thesis theme is material design with bayesian machine learning.
+
+  skills:
+    - name: C++
+      percentage: 90
+      description: use for Monte Carlo simulations, atcoder, and convex optimization (like ADMM, ISTA, ...)
+
+    - name: Python
+      percentage: 80
+      description: mainly use for machine laerning
+
+    - name: Go lang
+      percentage: 30
+      description: This site is created by Go lang.
+
+  softskills:
+    - name: MS Office Basics
+      percentage: 100
+      description: use on my works
+
+    - name: Linux OS Basics
+      percentage: 80
+      description: Manjaro / Ubuntu / Arch / Lubuntu ... 
+
+    - name: Blender Basics
+      percentage: 10
+      description: under learinig...
+
+  languages:
+    - name: Japanese
+#      color: Blue
+      percentage: 100
+#      description: 
+
+    - name: English
+      percentage: 70
+      description: my TOEIC score is 900
+
+
+#  projects:
+#    - title: Project Red
+#      color: red
+#      date: since 2019
+#      link: https://example.com
+#      description: Describing red stuff
+
+#    - title: Project Blue
+#      color: blue
+#      date: since 2016
+#      link: https://example.com/blue
+#      #description: nothing to describe
+
+#    - title: Project Default
+#      date: Since 2017
+#      link: https://example.com/default
+#      #description: not there either
+
+  misc: 
+    commandName: ascii
+    title: "My Ascii"
+    titleColor: teal
+    content: |
+           .----------------.  .----------------.  .----------------. 
+           | .--------------. || .--------------. || .--------------. |
+           | | ____    ____ | || |     _____    | || |  ________    | |
+           | ||_   \  /   _|| || |    |_   _|   | || | |_   ___ `.  | |
+           | |  |   \/   |  | || |      | |     | || |   | |   `. \ | |
+           | |  | |\  /| |  | || |      | |     | || |   | |    | | | |
+           | | _| |_\/_| |_ | || |     _| |_    | || |  _| |___.' / | |
+           | ||_____||_____|| || |    |_____|   | || | |________.'  | |
+           | |              | || |              | || |              | |
+           | '--------------' || '--------------' || '--------------' |
+           '----------------'  '----------------'  '----------------' 
+           .----------------.  .----------------.  .----------------. 
+           | .--------------. || .--------------. || .--------------. |
+           | |    _______   | || |     ______   | || |     _____    | |
+           | |   /  ___  |  | || |   .' ___  |  | || |    |_   _|   | |
+           | |  |  (__ \_|  | || |  / .'   \_|  | || |      | |     | |
+           | |   '.___`-.   | || |  | |         | || |      | |     | |
+           | |  |`\____) |  | || |  \ `.___.'\  | || |     _| |_    | |
+           | |  |_______.'  | || |   `._____.'  | || |    |_____|   | |
+           | |              | || |              | || |              | |
+           | '--------------' || '--------------' || '--------------' |
+           '----------------'  '----------------'  '----------------' 
+
+    contentColor: orange
